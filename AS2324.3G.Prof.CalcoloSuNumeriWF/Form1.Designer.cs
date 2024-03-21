@@ -31,9 +31,9 @@
             btnAggiungi = new Button();
             txtNumero = new TextBox();
             label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            label4 = new Label();
+            lblSomma = new Label();
+            lblConteggio = new Label();
+            lblMedia = new Label();
             SuspendLayout();
             // 
             // btnAggiungi
@@ -44,6 +44,7 @@
             btnAggiungi.TabIndex = 0;
             btnAggiungi.Text = "Add";
             btnAggiungi.UseVisualStyleBackColor = true;
+            btnAggiungi.Click += btnAggiungi_Click;
             // 
             // txtNumero
             // 
@@ -61,41 +62,41 @@
             label1.TabIndex = 2;
             label1.Text = "Numero";
             // 
-            // label2
+            // lblSomma
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(225, 152);
-            label2.Name = "label2";
-            label2.Size = new Size(67, 20);
-            label2.TabIndex = 2;
-            label2.Text = "Somma :";
+            lblSomma.AutoSize = true;
+            lblSomma.Location = new Point(225, 152);
+            lblSomma.Name = "lblSomma";
+            lblSomma.Size = new Size(67, 20);
+            lblSomma.TabIndex = 2;
+            lblSomma.Text = "Somma :";
             // 
-            // label3
+            // lblConteggio
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(225, 186);
-            label3.Name = "label3";
-            label3.Size = new Size(86, 20);
-            label3.TabIndex = 2;
-            label3.Text = "Conteggio :";
+            lblConteggio.AutoSize = true;
+            lblConteggio.Location = new Point(225, 186);
+            lblConteggio.Name = "lblConteggio";
+            lblConteggio.Size = new Size(86, 20);
+            lblConteggio.TabIndex = 2;
+            lblConteggio.Text = "Conteggio :";
             // 
-            // label4
+            // lblMedia
             // 
-            label4.AutoSize = true;
-            label4.Location = new Point(225, 225);
-            label4.Name = "label4";
-            label4.Size = new Size(58, 20);
-            label4.TabIndex = 2;
-            label4.Text = "Media :";
+            lblMedia.AutoSize = true;
+            lblMedia.Location = new Point(225, 225);
+            lblMedia.Name = "lblMedia";
+            lblMedia.Size = new Size(58, 20);
+            lblMedia.TabIndex = 2;
+            lblMedia.Text = "Media :";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(699, 305);
-            Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(label2);
+            Controls.Add(lblMedia);
+            Controls.Add(lblConteggio);
+            Controls.Add(lblSomma);
             Controls.Add(label1);
             Controls.Add(txtNumero);
             Controls.Add(btnAggiungi);
@@ -110,8 +111,8 @@
         private Button btnAggiungi;
         private TextBox txtNumero;
         private Label label1;
-        private Label label2;
-        private Label label3;
-        private Label label4;
+        private Label lblSomma;
+        private Label lblConteggio;
+        private Label lblMedia;
     }
 }

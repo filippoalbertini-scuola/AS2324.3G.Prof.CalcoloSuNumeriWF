@@ -6,5 +6,13 @@ namespace AS2324._3G.Prof.CalcoloSuNumeriWF
         {
             InitializeComponent();
         }
+
+        private void btnAggiungi_Click(object sender, EventArgs e)
+        {
+            double numero = Convert.ToDouble(txtNumero.Text);
+
+
+
+        }
     }
 }
